@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background-hearts"></div>
+
+    <!-- ================= Landing ================= -->
+
+    <section id="landing" class="page">
+
+        <div class="landing-card">
+
+            <h2>Happy Birthday</h2>
+
+            <h1>Double Lhin ❤️</h1>
+
+            <p class="question">
+                Will you open this little surprise?
+            </p>
+
+            <div class="button-group">
+
+                <button id="yesBtn">
+                    YES ❤️
+                </button>
+
+                <button id="noBtn">
+                    NO 🥺
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Hero ================= -->
+
+    <section id="hero" class="page hidden">
+
+        <div class="hero-content">
+
+            <h1>Happy Birthday 🎂</h1>
+
+            <p>
+                I made this little website just for you.
+                <br>
+                แฮปๆนะงับบ มีความสุขมากๆนา ❤️
+            </p>
+
+            <button id="enterMenu">
+                Continue ✨
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Menu ================= -->
+
+    <section id="menu" class="page hidden">
+
+        <h1>Choose Your Moment ✨</h1>
+
+        <p>
+            Click any card below
+        </p>
+
+        <div class="menu-grid">
+
+            <div class="menu-card" onclick="goSection('letter')">
+
+                💌
+
+                <h2>wishes</h2>
+
+            </div>
+
+            <div class="menu-card" onclick="goSection('gallery')">
+
+                📸
+
+                <h2>Our Photo</h2>
+
+            </div>
+
+            <div class="menu-card" onclick="goSection('song')">
+
+                🕰️
+
+                <h2>time since</h2>
+
+            </div>
+
+
+            <div class="menu-card" onclick="goSection('timeline')">
+
+                📖
+
+                <h2>Fact about our timeline</h2>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Letter ================= -->
+
+    <section id="letter" class="content-section">
+
+        <button class="back-btn" onclick="backMenu()">
+            ⬅ Back to Menu
+        </button>
+
+        <h1>💌 Letter</h1>
+
+        <p>
+            สุขสันต์วันเกิดนะงับ ขอให้มีความสุขมากๆ 17แล้ววว เย้ ขอให้ได้เกรด4ทุกเทอมเลย แต่หลินน่าจะได้ยุแล้วว56355 วันนี้เอาเว็ปไปก่อนนะ อาจจะดูไม่สวยมากแต่ก้ตั้งใจทำสุดๆ🫵🏻🫶🏻 นี่ยังไม่รุ้เลยจะเอาไรให้หลินดีเลยทำเว็บให้ก่อน สุดท้ายก็ ขอให้มีความสุขมากๆน้า❤️ 
+        </p>
+
+    </section>
+
+    <!-- ================= Gallery ================= -->
+
+    <section id="gallery" class="content-section">
+
+        <button class="back-btn" onclick="backMenu()">
+            ⬅ Back to Menu
+        </button>
+
+        <h1>📸 Gallery</h1>
+        <img src="images/lhin2.jpg" alt="Our Photo" class="gallery-photo">
+        <p>
+            รูปมีแค่นี้จิงๆ555667😭 เด่วรอมาเติมรุปให้เต้มด้วยกัน
+        </p>
+
+    </section>
+
+    <!-- ================= Our Time ================= -->
+
+<section id="song" class="content-section">
+
+    <button class="back-btn" onclick="backMenu()">
+        ⬅ Back to Menu
+    </button>
+
+    <h1>❤️🕰️ Our Time</h1>
+
+    <div class="time-card">
+
+        <h2 class="time-title">
+            We've been talking for...
+        </h2>
+
+        <div class="live-time">
+
+            <span id="years">0</span> Years
+            <span class="separator">:</span>
+
+            <span id="months">0</span> Months
+            <span class="separator">:</span>
+
+            <span id="days">0</span> Days
+            <span class="separator">:</span>
+
+            <span id="hours">00</span> Hours
+            <span class="separator">:</span>
+
+            <span id="minutes">00</span> Minutes
+            <span class="separator">:</span>
+
+            <span id="seconds">00</span> Seconds
+
+        </div>
+
+        <p class="since">
+            Since <strong>31 May 2026</strong> ❤️
+        </p>
+
+        <div class="line"></div>
+
+        <p class="message">
+            Every second with you has become one of my favorite memories.
+        </p>
+
+        <p class="counting">
+            ∞ Still counting...
+        </p>
+
+    </div>
+
+</section>
+
+    <!-- ================= Timeline ================= -->
+
+    <section id="timeline" class="content-section">
+
+        <button class="back-btn" onclick="backMenu()">
+            ⬅ Back to Menu
+        </button>
+
+        <h1>📖 Fact about our timeline</h1>
+
+        <p>
+           งงมั้ย ทำไมถึงทักวันนั้น เรื่องมันเป็นงี้ คือวันนั้นฉันมีเรื่องนึงที่ทำให้ต้องรุ้ให้ได้ว่าหลินชอบใครอยู่รึป่าว เพราะนี่ชอบหลินตั้งแต่ประมาณก่อนค่ายวิชาการแล่วว😋 เนื่องจากนี่เปนคนไม่ค่อยกล้าซะด้วย เลยฝากยูตะทักไป สุดท้ายฉันก้ทักไปเองซะเลย ละก้เปนไปตามนั้น56435534 คืนนั้นนี่นอนไม่หลับจิงๆน่ะ ดีใจมากกก จิงๆdetailเยอะกว่านี้แต่ ก้ประมาณนี้แหละ ไม่มีไรมาก แล้วก็ขอโทดที่คืนนั้นที่ฉันพิมพ์แปกๆไป จิงๆแล้วฉันเปนคนที่คิดมาก แบบ มากๆๆๆๆๆๆ เลยอาจจะมีน้อยใจมั่งไรงี้565362 แต่จิงๆก้ไม่มีไรนั่นแหละ เรื่องมันก้มีประมาณนี้งับ สรุปแลววคือนี่แอบชอบมาตั้งแต่ค่ายวิชาการละ แต่ไม่กล้าบอกสักทีจนถึงวันนั้น535367 สุดท้ายก้ขอให้มีความสุขมากๆงับ นี่จะคอยsupportอยุ่ห่างๆอย่างห่วงๆ🫶😋
+        </p>
+
+    </section>
+
+    <!-- ================= Ending ================= -->
+
+    <section id="ending" class="content-section">
+
+        <button class="back-btn" onclick="backMenu()">
+            ⬅ Back to Menu
+        </button>
+
+        <h1>🎂 Happy Birthday</h1>
+
+        <p>
+            Thank you for everything ❤️
+        </p>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
